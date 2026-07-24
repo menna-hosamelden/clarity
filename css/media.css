@@ -1,0 +1,111 @@
+/* sm */
+@media (min-width: 576px) {
+
+    /* navbar */
+    .w1-30 {
+        width: 30%;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+
+    /* general*/
+    /* sec1 */
+    .main-title {
+        font-size: 2.25rem;
+    }
+
+    /* sec3 */
+    .carousel-indicators {
+        bottom: -25%;
+    }
+}
+
+/* lg */
+@media (min-width: 992px) {
+
+    /* general */
+    .fs-60 {
+        font-size: 3.75rem;
+    }
+
+    /* navbar */
+    .w1-30 {
+        width: auto;
+    }
+
+    .nav-link::before {
+        display: block;
+    }
+
+    .dropdown-menu2 {
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+
+    /* header */
+    .bg-img-header {
+        padding-top: 5rem;
+        padding-bottom: 0;
+    }
+
+    /* sec1 */
+    .main-title {
+        font-size: 3rem;
+    }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+
+    /* navbar */
+    .dropdown-menu2 {
+        transform: translateX(-60%);
+        -webkit-transform: translateX(-60%);
+        -moz-transform: translateX(-60%);
+        -ms-transform: translateX(-60%);
+        -o-transform: translateX(-60%);
+    }
+}
+
+/* xxl */
+@media (min-width: 1400px) {
+    .dropdown-menu2 {
+        transform: translateX(-72%);
+        -webkit-transform: translateX(-72%);
+        -moz-transform: translateX(-72%);
+        -ms-transform: translateX(-72%);
+        -o-transform: translateX(-72%);
+    }
+}
+
+/* استخدمت هذه عشان اقدر اسوي سكرول لمن افتح الدروب*/
+@media (max-width: 991.98px) {
+
+    #navbarSupportedContent {
+        max-height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #navbarSupportedContent::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    #navbarSupportedContent::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    #navbarSupportedContent::-webkit-scrollbar-thumb {
+        background: #e2e8f0;
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+    }
+}

@@ -4,1246 +4,1381 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>EliteHomes - Your Dream Home Awaits</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
-<body class="position-relative overflow-x-hidden">
-    <!------- NavBar ------->
-    <nav class="navbar navbar-expand-lg bg-white position-fixed top-0 start-0  w-100 z-3">
-        <div class="container-fluid px-3">
-            <div class="logo d-flex justify-content-center align-items-center me-3">
-                <i class="fa-solid fa-cube p-2 me-2 w-auto fs-5 rounded-3"></i>
-                <span class="navbar-brand fs-4 fw-bold" href="#">Clarity</span>
-            </div>
+<body data-bs-spy="scroll" data-bs-target="#navId">
+    <!-- *********navbar start*********** -->
+    <nav class="navbar navbar-expand-lg px-4 py-3 position-fixed start-0 end-0 bg-white" id="navId">
+        <div class="container-fluid p-0">
+            <a class="navbar-brand fs-4 fw-bold">EliteHomes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6 align-items-start gap-32px">
                     <li class="nav-item">
-                        <a class="nav-link" href="home">Home</a>
+                        <a class="nav-link active p-0" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle p-0 d-flex align-items-center" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" href="#Properties">
+                            Properties
+                            <i class="fa-solid fa-chevron-down fs-12 ms-2"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu2">
+                            <div class="row">
+                                <div class="col-lg-3 mb-4 mb-lg-0">
+                                    <h3 class="fw-semibold fs-18 mb-3">Featured Properties</h3>
+                                    <div>
+                                        <div class="row">
+                                            <div class="rounded-8px min-card1 mb-3 p-12 col-6 col-lg-12">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="wh-64 rounded-8px">
+                                                        <img src="Images/luxury-villa.jpeg" alt="luxury-villa"
+                                                            class="w-100 rounded-8px object-fit-cover h-100">
+                                                    </div>
+                                                    <div class="ms-12">
+                                                        <h4 class="fw-medium fs-14 m-0">Luxury Villa</h4>
+                                                        <p class="fs-14 text-muted m-0">$2.5M • 5 beds • 4 baths</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="rounded-8px min-card1 mb-3 p-12 col-6 col-lg-12">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="wh-64 rounded-8px">
+                                                        <img src="Images/modern-apartment.jpeg" alt="modern-apartment"
+                                                            class="w-100 rounded-8px object-fit-cover h-100">
+                                                    </div>
+                                                    <div class="ms-12">
+                                                        <h4 class="fw-medium fs-14 m-0">Modern Apartment</h4>
+                                                        <p class="fs-14 text-muted m-0">$850K • 2 beds • 2 baths</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 mb-4 mb-lg-0">
+                                    <h3 class="fw-semibold fs-18 mb-3 ">Property Types</h3>
+                                    <ul class="list-unstyled mb-0 row">
+                                        <li class="mb-12 col-6 col-lg-12">
+                                            <div class="d-flex align-items-center gap-12px fs-6 text-muted1 min-card2 ">
+                                                <i class="fa-solid fa-house"></i>
+                                                <p class="m-0">Single Family Homes</p>
+                                            </div>
+                                        </li>
+                                        <li class="mb-12 col-6 col-lg-12">
+                                            <div class="d-flex align-items-center gap-12px fs-6 text-muted1 min-card2">
+                                                <i class="fa-solid fa-building"></i>
+                                                <p class="m-0">Apartments</p>
+                                            </div>
+                                        </li>
+                                        <li class="mb-12 col-6 col-lg-12">
+                                            <div class="d-flex align-items-center gap-12px fs-6 text-muted1 min-card2">
+                                                <i class="fa-solid fa-warehouse"></i>
+                                                <p class="m-0">Condominiums</p>
+                                            </div>
+                                        </li>
+                                        <li class="mb-12 col-6 col-lg-12">
+                                            <div class="d-flex align-items-center gap-12px fs-6 text-muted1 min-card2">
+                                                <i class="fa-solid fa-store"></i>
+                                                <p class="m-0">Commercial</p>
+                                            </div>
+                                        </li>
+                                        <li class="col-6 col-lg-12">
+                                            <div class="d-flex align-items-center gap-12px fs-6 text-muted1 min-card2">
+                                                <i class="fa-solid fa-tree"></i>
+                                                <p class="m-0">Land & Lots</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 mb-4 mb-lg-0">
+                                    <h3 class="fw-semibold fs-18 mb-3">Popular Locations</h3>
+                                    <div class="d-flex flex-lg-column justify-content-center justify-content-lg-start">
+                                        <div
+                                            class="gradient-purple1 d-flex align-items-center p-3 rounded-12px mb-12 w1-30 me-4 me-lg-0">
+                                            <div>
+                                                <p class="m-0 fw-semibold text-white fs-18">New York</p>
+                                                <p class="m-0 fs-14">2,145 Properties</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="gradient-purple2 d-flex align-items-center p-3 rounded-12px mb-12 w1-30 me-4 me-lg-0">
+                                            <div>
+                                                <p class="m-0 fw-semibold text-white fs-18">Los Angeles</p>
+                                                <p class="m-0 fs-14">1,873 Properties</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="gradient-purple3 d-flex align-items-center p-3 rounded-12px mb-12 w1-30">
+                                            <div>
+                                                <p class="m-0 fw-semibold text-white fs-18">Miami</p>
+                                                <p class="m-0 fs-14">1,526 Properties</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 mb-4 mb-lg-0">
+                                    <h3 class="fw-semibold fs-18 mb-3">Resources</h3>
+                                    <div class="row gap-2">
+                                        <div
+                                            class="p-20 position-relative overflow-hidden border-1px border-violet1 min-card4 min-card4-1 rounded-12px mb-3 col-5 col-lg-12">
+                                            <div class="d-flex align-items-center mb-12 gap-12px">
+                                                <div
+                                                    class="d-flex align-items-center justify-content-center wh-40 rounded-circle  bg-violet1 text-violet1 fs-18">
+                                                    <i class="fa-solid fa-book-open"></i>
+                                                </div>
+                                                <h4 class="fs-18 fw-semibold">Buying Guide</h4>
+                                            </div>
+                                            <p class="m-0 fs-6">Essential tips and strategies for first-time homebuyers
+                                            </p>
+                                            <div class="d-lg-flex align-items-center gap-2 text-violet1 mt-12 d-none">
+                                                <span class="fs-14 fw-medium">Learn More</span>
+                                                <i class="fa-solid fa-arrow-right-long"></i>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="p-20 position-relative overflow-hidden border-1px border-green1 min-card4 min-card4-2 rounded-12px mb-3 col-5 col-lg-12">
+                                            <div class="d-flex align-items-center mb-12 gap-12px">
+                                                <div
+                                                    class="d-flex align-items-center justify-content-center wh-40 rounded-circle  text-green1 bg-green1 fs-18">
+                                                    <i class="fa-solid fa-chart-line"></i>
+                                                </div>
+                                                <h4 class="fs-18 fw-semibold">Investment Tips</h4>
+                                            </div>
+                                            <p class="m-0 fs-6">Smart strategies for property investment success</p>
+                                            <div class="d-lg-flex align-items-center gap-2 text-green1 mt-12 d-none">
+                                                <span class="fs-14 fw-medium">Learn More</span>
+                                                <i class="fa-solid fa-arrow-right-long"></i>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="p-20 position-relative overflow-hidden border-1px border-purple1 min-card4 min-card4-3 rounded-12px mb-3 col-5 col-lg-12">
+                                            <div class="d-flex align-items-center mb-12 gap-12px">
+                                                <div
+                                                    class="d-flex align-items-center justify-content-center wh-40 rounded-circle  bg-purple1 text-purple1 fs-18">
+                                                    <i class="fa-solid fa-file-lines"></i>
+                                                </div>
+                                                <h4 class="fs-18 fw-semibold">Market Reports</h4>
+                                            </div>
+                                            <p class="m-0 fs-6">In-depth analysis of real estate market trends</p>
+                                            <div class="d-lg-flex align-items-center gap-2 text-purple1 mt-12 d-none">
+                                                <span class="fs-14 fw-medium">Learn More</span>
+                                                <i class="fa-solid fa-arrow-right-long"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services">Services</a>
+                        <a class="nav-link  p-0" href="#Services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="technology">Technology</a>
+                        <a class="nav-link  p-0" href="#Testimonials">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="testmonials">Testimonials</a>
+                        <a class="nav-link  p-0" href="#FAQ">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="faq">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact">Contact</a>
+                        <a class="nav-link  p-0" href="#Contact">Contact</a>
                     </li>
                 </ul>
             </div>
-            <div class="sign-in">
-                <a href="#" class="text-decoration-none mx-4">Sign In</a>
-                <button class="text-white px-4 py-2 rounded-pill ">Get Startred</button>
-            </div>
         </div>
     </nav>
+    <!-- *********end navbar************** -->
+    <!-- *********header start*********** -->
+    <header id="Home" class="bg-img-header">
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="text-center px-4 m-auto max-width-header">
+                <h1 class="fs-48 fs-60 fw-bold text-white mb-4 mt-lg-5">
+                    Find Your Dream Home
+                </h1>
+                <p class="mb-5 mx-auto p-header">
+                    Discover exceptional properties in prime locations. From modern condos to luxury estates, we help
+                    you find the perfect place to call home.
+                </p>
+                <div class="search-card mx-auto mt-5 text-start">
+                    <div class="row gy-4">
+                        <div class="col-12 col-lg-6">
+                            <label class="search-label">Location</label>
+                            <div class="position-relative">
+                                <i class="fa-solid fa-location-dot search-input-icon"></i>
+                                <input type="text" class="form-control search-field ps-5"
+                                    placeholder="Enter city, neighborhood, or ZIP code">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <label class="search-label">Property Type</label>
+                            <select class="form-select search-field cursor-pointer">
+                                <option selected>All Types</option>
+                                <option>House</option>
+                                <option>Apartment</option>
+                                <option>Condo</option>
+                                <option>Townhouse</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <label class="search-label">Price Range</label>
+                            <select class="form-select search-field cursor-pointer">
+                                <option selected>Any Price</option>
+                                <option>$0 - $500K</option>
+                                <option>$500K - $1M</option>
+                                <option>$1M - $2M</option>
+                                <option>$2M+</option>
+                            </select>
+                        </div>
 
-    <!------- Home ------->
+                        <div class="col-6 col-lg-3">
+                            <label class="search-label">Bedrooms</label>
+                            <select class="form-select search-field cursor-pointer">
+                                <option selected>Any</option>
+                                <option>1+</option>
+                                <option>2+</option>
+                                <option>3+</option>
+                                <option>4+</option>
+                                <option>5+</option>
+                            </select>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <label class="search-label">Bathrooms</label>
+                            <select class="form-select search-field cursor-pointer">
+                                <option selected>Any</option>
+                                <option>1+</option>
+                                <option>2+</option>
+                                <option>3+</option>
+                                <option>4+</option>
+                            </select>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <label class="search-label">Min Sq Ft</label>
+                            <input type="number" class="form-control search-field" placeholder="1,000">
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <label class="search-label">Max Sq Ft</label>
+                            <input type="number" class="form-control search-field" placeholder="5,000">
+                        </div>
 
-    <header id="home" class="container-fluid mx-4">
-        <span class="spn px-3 py-2 rounded-pill">
-            <i class="fa-solid fa-rocket"></i>
-            <span>Transforming Digital Experiences</span>
-        </span>
-        <div class="row d-flex flex-wrap mx-4">
-            <div class="caption col-lg-6 col-md-12">
-                <h1>Digital Solutions <br>
-                    That Drive <br>
-                    Growth</h1>
-                <p class="lead">We craft innovative digital experiences that transform businesses and <br> accelerate
-                    growth. From cutting-edge web applications to mobile <br> solutions, we deliver technology that
-                    makes a
-                    difference.</p>
-                <button class="btn1 px-5 py-3 me-3 fs-5 text-white rounded-pill"> Start Your Project <i
-                        class="fa-solid fa-arrow-right"></i></button>
-                <button class="btn2 px-5 py-3 fs-5 rounded-pill"><i class="fa-solid fa-play"></i> Watch Demo</button>
-                <div class="numbers text-center mt-5 mb-5 d-flex ">
-                    <div class="spn1 me-5">
-                        <span class="fs-2  fw-bold">500+</span>
-                        <p>Projects Delivered</p>
-                    </div>
-                    <div class="spn2 me-5">
-                        <span class="fs-2  fw-bold">98%</span>
-                        <p>Client Satisfaction</p>
-                    </div>
-                    <div class="spn3 me-5">
-                        <span class="fs-2  fw-bold">24/7</span>
-                        <p>Support</p>
+                        <div class="col-12">
+                            <button type="button" class="btn search-submit-btn w-100 text-white">
+                                <i class="fa-solid fa-magnifying-glass me-2"></i>
+                                Search Properties
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="image-content col-lg-6 col-md-12">
-                <div class="inner m-auto rounded-5 position-relative">
-                    <span
-                        class="spn1 d-flex align-items-center justify-content-center position-absolute rounded-4 text-white fs-4""><i class="
-                        fa-solid fa-code"></i></span>
-                    <img src="./assets/hero-img-sGwnWbTh.png" class="w-100 rounded-5" alt="home-img">
-                    <span
-                        class="spn2 d-flex align-items-center justify-content-center position-absolute text-white rounded-4  fs-4"><i
-                            class="fa-solid fa-mobile"></i></span>
+                <div class="row  mt-5 mx-auto max-width-header2">
+                    <div class="col-6 col-lg-3 mb-3">
+                        <div class="text-center">
+                            <div class="fw-bold fs-30 text-white">15,000+</div>
+                            <div class="p-header2">Active Listings</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mb-3">
+                        <div class="text-center">
+                            <div class="fw-bold fs-30 text-white">98%</div>
+                            <div class="p-header2">Client Satisfaction</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mb-3">
+                        <div class="text-center">
+                            <div class="fw-bold fs-30 text-white">500+</div>
+                            <div class="p-header2">Expert Agents</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mb-3">
+                        <div class="text-center">
+                            <div class="fw-bold fs-30 text-white">25</div>
+                            <div class="p-header2">Years Experience</div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
     </header>
-
-    <!------- Services ------->
-
-    <section id="services" class="my-5">
-
-        <div class="content container-fluid mx-4">
-            <div class="caption text-center">
-                <span class="px-3 py-2 rounded-pill"><i class="fa-solid fa-gears me-2"></i>Our Services</span>
-                <h2 class="my-4">Comprehensive Digital Solutions</h2>
-                <p class="lead fs-4 lh-base">From concept to deployment, we provide end-to-end digital services that
-                    <br>
-                    transform your business and engage your customers.
-                </p>
-            </div>
-            <div class="items my-5">
-                <div class="row gy-4">
-                    <div class="item col-lg-4 col-md-4 col-sm-6 col-12">
-                        <div class="inner border p-4 rounded-4">
-                            <span
-                                class="d-inline-flex align-items-center justify-content-center text-white rounded-4"><i
-                                    class="fa-solid fa-code fs-4 "></i></span>
-                            <h3 class="py-3 fs-5 fw-bold">Web Development</h3>
-                            <p class=" lh-base">Custom web applications built with cutting-edge <br> technologies.
-                                Responsive, scalable, and optimized <br> for performance.</p>
-                            <ul class="text-decoration-none ps-0">
-                                <li class="list-unstyled py-2"><i class="fa-solid fa-check"></i> React & Next.js
-                                    Development
-                                </li>
-                                <li class="list-unstyled  py-2"><i class="fa-solid fa-check"></i> E-commerce Solutions
-                                </li>
-                                <li class="list-unstyled  py-2"><i class="fa-solid fa-check"></i> Progressive Web Apps
-                                </li>
-                            </ul>
-                            <button class="fw-bold">Learn More <i class="fa-solid fa-arrow-right-long"></i></button>
-                        </div>
+    <!-- *********header end*********** -->
+    <main>
+        <!-- *********sec1 start*********** -->
+        <section id="Properties" class="py-80 bg-gray1">
+            <div class="container-fluid">
+                <div class="text-center mb-64">
+                    <div class="mb-3 d-flex align-items-center justify-content-center">
+                        <div class="title-left"></div>
+                        <div class="title-1">Premium Collection</div>
+                        <div class="title-right"></div>
                     </div>
-                    <div class="item col-lg-4 col-md-4 col-sm-6 col-12">
-                        <div class="inner border p-4 rounded-4">
-                            <span
-                                class="d-inline-flex align-items-center justify-content-center text-white rounded-4"><i
-                                    class="fa-solid fa-mobile fs-4"></i></span>
-                            <h3 class="py-3 fs-5 fw-bold">Mobile Applications</h3>
-                            <p class=" lh-base">Native and cross-platform mobile apps that deliver <br> exceptional user
-                                experiences across all devices.</p>
-                            <ul class="text-decoration-none ps-0">
-                                <li class="list-unstyled py-2"><i class="fa-solid fa-check"></i> iOS & Android
-                                    Development
-                                </li>
-                                <li class="list-unstyled  py-2"><i class="fa-solid fa-check"></i> React Native & Flutter
-                                </li>
-                                <li class="list-unstyled  py-2"><i class="fa-solid fa-check"></i> App Store Optimization
-                                </li>
-                            </ul>
-                            <button class="fw-bold pb-4">Learn More <i
-                                    class="fa-solid fa-arrow-right-long"></i></button>
-                        </div>
-                    </div>
-                    <div class="item col-lg-4 col-md-4 col-sm-6 col-12">
-                        <div class="inner border p-4 rounded-4">
-                            <span
-                                class="d-inline-flex align-items-center justify-content-center text-white rounded-4"><i
-                                    class="fa-solid fa-cloud fs-4"></i></span>
-                            <h3 class="py-3 fs-5 fw-bold">Cloud Solutions</h3>
-                            <p class=" lh-base">Scalable cloud infrastructure and services that grow <br> with your
-                                business needs and ensure maximum <br>uptime.</p>
-                            <ul class="text-decoration-none ps-0">
-                                <li class="list-unstyled py-2"><i class="fa-solid fa-check"></i> AWS & Azure Integration
-                                </li>
-                                <li class="list-unstyled  py-2"><i class="fa-solid fa-check"></i> DevOps & CI/CD
-                                </li>
-                                <li class="list-unstyled  py-2"><i class="fa-solid fa-check"></i> Microservices
-                                    Architecture
-                                </li>
-                            </ul>
-                            <button class="fw-bold">Learn More <i class="fa-solid fa-arrow-right-long"></i></button>
-                        </div>
-                    </div>
+                    <h2 class="main-title text-center">
+                        Featured Properties
+                    </h2>
+                    <p class="m-0 p-title  fs-20 mx-auto">
+                        Discover our handpicked selection of premium properties in the most desirable locations
+                    </p>
                 </div>
-                <div class="row mt-3">
-                    <div class="item col-lg-4 col-md-4 col-sm-6 col-12">
-                        <div class="inner border p-4 rounded-4">
-                            <span
-                                class="d-inline-flex align-items-center justify-content-center text-white rounded-4"><i
-                                    class="fa-solid fa-brain fs-4"></i></span>
-                            <h3 class="py-3 fs-5 fw-bold">AI & Machine Learning</h3>
-                            <p class=" lh-base">Intelligent solutions powered by artificial intelligence <br> and
-                                machine learning to automate and optimize <br> processes.</p>
-                            <ul class="text-decoration-none ps-0">
-                                <li class="list-unstyled py-2"><i class="fa-solid fa-check"></i> Predictive Analytics
-                                </li>
-                                <li class="list-unstyled  py-2"><i class="fa-solid fa-check"></i> Natural Language
-                                    Processing
-                                </li>
-                                <li class="list-unstyled  py-2"><i class="fa-solid fa-check"></i> Computer Vision</li>
-                            </ul>
-                            <button class="fw-bold">Learn More <i class="fa-solid fa-arrow-right-long"></i></button>
-                        </div>
-                    </div>
-                    <div class="item col-lg-4 col-md-4 col-sm-6 col-12">
-                        <div class="inner border p-4 rounded-4">
-                            <span
-                                class="d-inline-flex align-items-center justify-content-center text-white rounded-4"><i
-                                    class="fa-solid fa-chart-line fs-4"></i></span>
-                            <h3 class="py-3 fs-5 fw-bold">Digital Marketing</h3>
-                            <p class=" lh-base">Data-driven marketing strategies that increase <br> brand visibility and
-                                drive customer engagement <br>across all channels.</p>
-                            <ul class="text-decoration-none ps-0">
-                                <li class="list-unstyled py-2"><i class="fa-solid fa-check"></i> SEO & SEM Optimization
-                                </li>
-                                <li class="list-unstyled  py-2"><i class="fa-solid fa-check"></i> Social Media
-                                    Management
-                                </li>
-                                <li class="list-unstyled  py-2"><i class="fa-solid fa-check"></i> Content Strategy
-                                </li>
-                            </ul>
-                            <button class="fw-bold pb-4">Learn More <i
-                                    class="fa-solid fa-arrow-right-long"></i></button>
-                        </div>
-                    </div>
-                    <div class="item col-lg-4 col-md-4 col-sm-6 col-12">
-                        <div class="inner border p-4 rounded-4">
-                            <span
-                                class="d-inline-flex align-items-center justify-content-center text-white rounded-4"><i
-                                    class="fa-solid fa-palette fs-4"></i></span>
-                            <h3 class="py-3 fs-5 fw-bold">UI/UX Design</h3>
-                            <p class=" lh-base">SUser-centered design that creates intuitive, <br> beautiful, and
-                                accessible digital experiences that <br>users love.</p>
-                            <ul class="text-decoration-none ps-0">
-                                <li class="list-unstyled py-2"><i class="fa-solid fa-check"></i> User Research & Testing
-                                </li>
-                                <li class="list-unstyled  py-2"><i class="fa-solid fa-check"></i> Wireframing &
-                                    Prototyping
-                                </li>
-                                <li class="list-unstyled  py-2"><i class="fa-solid fa-check"></i> Design Systems
-                                </li>
-                            </ul>
-                            <button class="fw-bold">Learn More <i class="fa-solid fa-arrow-right-long"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!------- Technology ------->
-
-    <section id="technology" class="my-5">
-        <div class="content container">
-            <div class="caption text-center">
-                <span class="px-3 py-2 rounded-pill"><i class="fa-solid fa-gears me-2"></i>Technology Stack</span>
-                <h2 class="my-4">Cutting-Edge Technologies</h2>
-                <p class="lead fs-4 lh-base">We leverage the latest technologies and frameworks to build scalable,
-                    secure,
-                    <br>
-                    and high-performance solutions.
-                </p>
-            </div>
-            <div class="navs my-5">
-                <div class="mx-4">
-                    <ul class="nav nav-tabs justify-content-center border-0 mb-5">
-                        <li class="nav-item">
-                            <a class="nav-link active fw-bold" data-bs-toggle="tab" href="#frontend">
-                                <i class="fa-solid fa-code me-2"></i>Frontend
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold" data-bs-toggle="tab" href="#backend">
-                                <i class="fa-solid fa-server me-2"></i>Backend
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold" data-bs-toggle="tab" href="#mobile">
-                                <i class="fa-solid fa-mobile me-2"></i>Mobile
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold" data-bs-toggle="tab" href="#cloud">
-                                <i class="fa-solid fa-cloud me-2"></i>Cloud & DevOps
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold" data-bs-toggle="tab" href="#database">
-                                <i class="fa-solid fa-database me-2"></i>Database
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane fade show active" id="frontend">
-                            <h2 class="text-center fw-bold mb-2">Frontend Technologies </h2>
-                            <p class="text-center text-muted mb-5">Modern frameworks and libraries for creating
-                                exceptional user interfaces
-                            </p>
-                            <div class="row gy-4">
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card react p-4 rounded-4">
-                                        <div class="icon-box  rounded-3 mb-3">
-                                            <i class="fa-brands fa-react text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold"">React.js</h5>
-                                        <p class=" text-muted">Component-based library for building <br> interactive
-                                            user interfaces with virtual <br>DOM
-                                            </p>
-                                            <div class="d-flex gap-2">
-                                                <span class="badge rounded-pill">JSX</span>
-                                                <span class="badge rounded-pill">Hooks</span>
-                                                <span class="badge rounded-pill">Redux</span>
-                                            </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card next p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3 fw-bold fw-bolder text-white">
-                                            Next
-                                        </div>
-                                        <h5 class="fw-bold"">Next.js</h5>
-                                        <p class=" text-muted">Full-stack React framework with <br> server-side
-                                            rendering and static<br>generation</p>
-                                            <div class="d-flex gap-2">
-                                                <span class="badge rounded-pill">SSR</span>
-                                                <span class="badge rounded-pill">SSG</span>
-                                                <span class="badge rounded-pill">API Routes</span>
-                                            </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card vue p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-brands fa-vuejs text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold"">Vue.js</h5>
-                                        <p class=" text-muted">Progressive framework for building <br> user interfaces
-                                            with excellent<br>developer experience</p>
-                                            <div class="d-flex gap-2">
-                                                <span class="badge rounded-pill">Composition API</span>
-                                                <span class="badge rounded-pill">Vuex</span>
-                                                <span class="badge rounded-pill">Nuxt</span>
-                                            </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card angular p-4 rounded-4">
-                                        <div class="icon-box  rounded-3 mb-3">
-                                            <i class="fa-brands fa-angular text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold"">Angular</h5>
-                                        <p class=" text-muted">Comprehensive platform for building <br> scalable web
-                                            applications</p>
-                                            <div class="d-flex gap-2">
-                                                <span class="badge rounded-pill">TypeScript</span>
-                                                <span class="badge rounded-pill">RxJS</span>
-                                                <span class="badge rounded-pill">CLI</span>
-                                            </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card vite p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-solid fa-bolt text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold"">Vite</h5>
-                                        <p class=" text-muted">Next generation frontend tooling with <br> lightning
-                                            fast builds</p>
-                                            <div class="d-flex gap-2">
-                                                <span class="badge rounded-pill">HMR</span>
-                                                <span class="badge rounded-pill">ESM</span>
-                                                <span class="badge rounded-pill">Rollup</span>
-                                            </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card tailwind p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-brands fa-css3-alt text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold"">Tailwind CSS</h5>
-                                        <p class=" text-muted">Utility-first CSS framework for rapid UI <br>
-                                            development</p>
-                                            <div class="d-flex gap-2">
-                                                <span class="badge rounded-pill">JIT</span>
-                                                <span class="badge rounded-pill">Components</span>
-                                                <span class="badge rounded-pill">Responsive</span>
-                                            </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="backend">
-                            <h2 class="text-center fw-bold mb-2">Backend Technologies</h2>
-                            <p class="text-center text-muted mb-5">Powerful server-side technologies for scalable
-                                applications</p>
-                            <div class="row gy-4">
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card node p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-brands fa-node-js text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">Node.js</h5>
-                                        <p class="text-muted">JavaScript runtime built on Chrome's V8 engine for
-                                            server-side development</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Express.js</span>
-                                            <span class="badge rounded-pill">NPM</span>
-                                            <span class="badge rounded-pill">TypeScript</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card python p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-brands fa-python text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">Python</h5>
-                                        <p class="text-muted">Versatile programming language with powerful frameworks
-                                            for web development</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Django</span>
-                                            <span class="badge rounded-pill">FastAPI</span>
-                                            <span class="badge rounded-pill">Flask</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card golang p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3 fw-bold text-white">
-                                            Go
-                                        </div>
-                                        <h5 class="fw-bold">Golang</h5>
-                                        <p class="text-muted">Fast, statically typed language designed for modern
-                                            software development</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Gin</span>
-                                            <span class="badge rounded-pill">Goroutines</span>
-                                            <span class="badge rounded-pill">Microservices</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card java p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-brands fa-java text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">Java</h5>
-                                        <p class="text-muted">Enterprise-grade platform with robust frameworks for
-                                            large-scale applications</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Spring Boot</span>
-                                            <span class="badge rounded-pill">Hibernate</span>
-                                            <span class="badge rounded-pill">Maven</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card dotnet p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3 fw-bold text-white">
-                                            .NET
-                                        </div>
-                                        <h5 class="fw-bold">.NET Core</h5>
-                                        <p class="text-muted">Cross-platform framework for building modern, cloud-based
-                                            applications</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">C#</span>
-                                            <span class="badge rounded-pill">Entity Framework</span>
-                                            <span class="badge rounded-pill">Azure</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card ruby p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-solid fa-gem text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">Ruby</h5>
-                                        <p class="text-muted">Dynamic language focused on simplicity and productivity
-                                        </p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Rails</span>
-                                            <span class="badge rounded-pill">Sinatra</span>
-                                            <span class="badge rounded-pill">RubyGems</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="mobile">
-                            <h2 class="text-center fw-bold mb-2">Mobile Technologies</h2>
-                            <p class="text-center text-muted mb-5">Cross-platform and native mobile development
-                                solutions</p>
-                            <div class="row gy-4">
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card react-native p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-brands fa-react text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">React Native</h5>
-                                        <p class="text-muted">Cross-platform mobile development using React and
-                                            JavaScript</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Expo</span>
-                                            <span class="badge rounded-pill">Navigation</span>
-                                            <span class="badge rounded-pill">Redux</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card flutter p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-solid fa-mobile text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">Flutter</h5>
-                                        <p class="text-muted">Google's UI toolkit for building natively compiled
-                                            applications</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Dart</span>
-                                            <span class="badge rounded-pill">Widgets</span>
-                                            <span class="badge rounded-pill">Material</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card ios p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-brands fa-apple text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">iOS Native</h5>
-                                        <p class="text-muted">Native iOS development using Swift and Xcode</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Swift</span>
-                                            <span class="badge rounded-pill">SwiftUI</span>
-                                            <span class="badge rounded-pill">Core Data</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card android p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-brands fa-android text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">Android Native</h5>
-                                        <p class="text-muted">Native Android development using Kotlin and Android Studio
-                                        </p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Kotlin</span>
-                                            <span class="badge rounded-pill">Jetpack</span>
-                                            <span class="badge rounded-pill">Room</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card xamarin p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-solid fa-code text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">Xamarin</h5>
-                                        <p class="text-muted">Microsoft's cross-platform solution using C# and .NET</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">C#</span>
-                                            <span class="badge rounded-pill">Forms</span>
-                                            <span class="badge rounded-pill">MVVM</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card pwa p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-solid fa-globe text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">PWA</h5>
-                                        <p class="text-muted">Progressive Web Apps with native-like mobile experiences
-                                        </p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Service Worker</span>
-                                            <span class="badge rounded-pill">Manifest</span>
-                                            <span class="badge rounded-pill">Offline</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="cloud">
-                            <h2 class="text-center fw-bold mb-2">Cloud & DevOps</h2>
-                            <p class="text-center text-muted mb-5">Scalable cloud infrastructure and modern DevOps
-                                practices</p>
-                            <div class="row gy-4">
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card aws p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3 fw-bold text-white">
-                                            aws
-                                        </div>
-                                        <h5 class="fw-bold">Amazon AWS</h5>
-                                        <p class="text-muted">Comprehensive cloud computing platform with extensive
-                                            services</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">EC2</span>
-                                            <span class="badge rounded-pill">Lambda</span>
-                                            <span class="badge rounded-pill">S3</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card azure p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-brands fa-windows text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">Microsoft Azure</h5>
-                                        <p class="text-muted">Enterprise cloud platform with integrated development
-                                            tools</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">App Service</span>
-                                            <span class="badge rounded-pill">Functions</span>
-                                            <span class="badge rounded-pill">DevOps</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card gcloud p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3 fw-bold text-white">
-                                            G
-                                        </div>
-                                        <h5 class="fw-bold">Google Cloud</h5>
-                                        <p class="text-muted">Google's cloud computing platform with AI and ML
-                                            capabilities</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Compute Engine</span>
-                                            <span class="badge rounded-pill">Cloud Run</span>
-                                            <span class="badge rounded-pill">BigQuery</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card docker p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-brands fa-docker text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">Docker</h5>
-                                        <p class="text-muted">Containerization platform for consistent application
-                                            deployment</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Containers</span>
-                                            <span class="badge rounded-pill">Images</span>
-                                            <span class="badge rounded-pill">Compose</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card k8s p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3 fw-bold text-white">
-                                            K8s
-                                        </div>
-                                        <h5 class="fw-bold">Kubernetes</h5>
-                                        <p class="text-muted">Container orchestration system for automating deployment
-                                            and scaling</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Pods</span>
-                                            <span class="badge rounded-pill">Services</span>
-                                            <span class="badge rounded-pill">Helm</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card cicd p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-solid fa-user-gear text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">CI/CD Pipeline</h5>
-                                        <p class="text-muted">Automated build, test, and deployment workflows</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Jenkins</span>
-                                            <span class="badge rounded-pill">GitHub Actions</span>
-                                            <span class="badge rounded-pill">GitLab CI</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="database">
-                            <h2 class="text-center fw-bold mb-2">Database Technologies</h2>
-                            <p class="text-center text-muted mb-5">Robust data storage solutions for modern applications
-                            </p>
-                            <div class="row gy-4">
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card postgresql p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-solid fa-database text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">PostgreSQL</h5>
-                                        <p class="text-muted">Advanced open-source relational database with JSON support
-                                        </p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">ACID</span>
-                                            <span class="badge rounded-pill">JSON</span>
-                                            <span class="badge rounded-pill">Extensions</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card mongodb p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3 fw-bold text-white">
-                                            Mongo
-                                        </div>
-                                        <h5 class="fw-bold">MongoDB</h5>
-                                        <p class="text-muted">Flexible NoSQL document database for modern applications
-                                        </p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Documents</span>
-                                            <span class="badge rounded-pill">Aggregation</span>
-                                            <span class="badge rounded-pill">Sharding</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card redis p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-solid fa-fire text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">Redis</h5>
-                                        <p class="text-muted">In-memory data structure store for caching and real-time
-                                            applications</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Cache</span>
-                                            <span class="badge rounded-pill">Pub/Sub</span>
-                                            <span class="badge rounded-pill">Streams</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card mysql p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-solid fa-database text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">MySQL</h5>
-                                        <p class="text-muted">Popular open-source relational database management system
-                                        </p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">InnoDB</span>
-                                            <span class="badge rounded-pill">Replication</span>
-                                            <span class="badge rounded-pill">Clustering</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card elastic p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-solid fa-chart-line text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">Elasticsearch</h5>
-                                        <p class="text-muted">Distributed search and analytics engine for complex
-                                            queries</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Search</span>
-                                            <span class="badge rounded-pill">Analytics</span>
-                                            <span class="badge rounded-pill">Kibana</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="tech-card graphql p-4 rounded-4">
-                                        <div class="icon-box rounded-3 mb-3">
-                                            <i class="fa-solid fa-diagram-project text-white fs-4"></i>
-                                        </div>
-                                        <h5 class="fw-bold">GraphQL</h5>
-                                        <p class="text-muted">Query language and runtime for APIs with flexible data
-                                            fetching</p>
-                                        <div class="d-flex gap-2">
-                                            <span class="badge rounded-pill">Schema</span>
-                                            <span class="badge rounded-pill">Resolvers</span>
-                                            <span class="badge rounded-pill">Apollo</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!------- Testmonial ------->
-
-    <section id="testmonial" class="py-5 my-5">
-        <div class="content container w-75">
-            <div class="caption text-center">
-                <span class="px-3 py-2 rounded-pill"><i class="fa-solid fa-heart me-2"></i>Client Testimonials</span>
-                <h2 class="my-4">What Our Clients Say</h2>
-                <p class="lead fs-5 lh-base">Don't just take our word for it. Here's what our clients have to say about
-                    working
-                    <br>
-                    with us.
-                </p>
-            </div>
-            <div id="testimonialsCarousel" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0"
-                        class="active rounded-circle"></button>
-                    <button type="button" class="rounded-circle" data-bs-target="#testimonialsCarousel"
-                        data-bs-slide-to="1"></button>
-                    <button type="button" class="rounded-circle" data-bs-target="#testimonialsCarousel"
-                        data-bs-slide-to="2"></button>
-                    <button type="button" class="rounded-circle" data-bs-target="#testimonialsCarousel"
-                        data-bs-slide-to="3"></button>
-                </div>
-                <div class="carousel-inner px-5 pb-5">
-                    <div class="carousel-item active">
-                        <div class="testimonial-card p-5 rounded-4 bg-white">
-                            <div class="d-flex justify-content-between align-items-center mb-4">
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="quote-box p-3 rounded-3">
-                                        <i class="fa-solid fa-quote-left fs-4"></i>
-                                    </div>
-                                    <div>
-                                        <div class="stars text-warning">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                        <span class="text-muted">5.0 Rating</span>
-                                    </div>
-                                </div>
-                                <span class="verified-badge px-3 py-2 rounded-pill">
-                                    <i class="fa-solid fa-circle-check me-1"></i> Verified
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-4">
+                        <div class="property-card rounded-16px overflow-hidden h-100">
+                            <div class="position-relative h-256 overflow-hidden">
+                                <img src="Images/featured-properties-img-1.png" alt="Modern Luxury Estate"
+                                    class="w-100 property-img object-fit-cover">
+                                <span class="badge-tag badge-featured">Featured</span>
+                                <button type="button" class="fav-btn">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <span class="photos-tag">
+                                    <i class="fa-solid fa-camera me-1"></i>
+                                    24 Photos
                                 </span>
                             </div>
-                            <p class="fs-5 lh-lg mb-4">"Clarity transformed our entire digital presence. Their team's
-                                expertise and dedication resulted in a 300% increase in our online sales. Absolutely
-                                phenomenal work!"
-                            </p>
-                            <hr>
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="position-relative">
-                                        <div class="image">
-                                            <img src="./assets/avatar-1-CwUcGkzI.jpg" class="rounded-circle"
-                                                alt="ahmed">
-                                        </div>
-                                        <span class="verified-icon position-absolute bottom-0 end-0">
-                                            <i class="fa-solid fa-circle-check"></i>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <h6 class="fw-bold mb-0 fs-5">Ahmed Al-Farsi</h6>
-                                        <span class="text-muted">CEO, RetailMax</span><br>
-                                        <span class="spn"><i class="fa-brands fa-linkedin me-1"></i> Verified on
-                                            LinkedIn</span>
-                                    </div>
+                            <div class="p-20">
+                                <div class="d-flex align-items-start justify-content-between mb-12">
+                                    <h3 class="fs-30 fw-bold text-purple1 m-0">$2,850,000</h3>
+                                    <span class="fs-14 text-secondary text-end">Price per sq ft: $425</span>
                                 </div>
-                                <div class="text-end">
-                                    <span class="fs-3 fw-bold">300%</span>
-                                    <p class="text-muted mb-0">Growth</p>
+                                <p class="fs-6 fw-medium mb-12 text-secondary">4 beds • 3.5 baths • 6,720 sqft</p>
+                                <h4 class="fs-6 fw-medium mb-2">Modern Luxury Estate</h4>
+                                <p class="fs-6 text-muted mb-4">1234 Beverly Hills Drive, Beverly Hills, CA 90210</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="Images/avatar-1.jpg" alt="John Mitchell" class="agent-avatar">
+                                        <span class="fs-14">John Mitchell</span>
+                                    </div>
+                                    <button type="button" class="btn schedule-tour-btn">Schedule Tour</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item ">
-                        <div class="testimonial-card p-5 rounded-4 bg-white">
-                            <div class="d-flex justify-content-between align-items-center mb-4">
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="quote-box p-3 rounded-3">
-                                        <i class="fa-solid fa-quote-left fs-4"></i>
-                                    </div>
-                                    <div>
-                                        <div class="stars text-warning">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                        <span class="text-muted">5.0 Rating</span>
-                                    </div>
-                                </div>
-                                <span class="verified-badge px-3 py-2 rounded-pill">
-                                    <i class="fa-solid fa-circle-check me-1"></i> Verified
+
+                    <!-- Card 2 -->
+                    <div class="col-lg-4">
+                        <div class="property-card rounded-16px overflow-hidden h-100">
+                            <div class="position-relative h-256 overflow-hidden">
+                                <img src="Images/featured-properties-img-2.png" alt="Downtown Penthouse"
+                                    class="w-100 property-img object-fit-cover">
+                                <span class="badge-tag badge-new">New Listing</span>
+                                <button type="button" class="fav-btn">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <span class="photos-tag">
+                                    <i class="fa-solid fa-camera me-1"></i>
+                                    18 Photos
                                 </span>
                             </div>
-                            <p class="fs-5 lh-lg mb-4">
-                                "The telemedicine platform they built for us has revolutionized how we serve our
-                                patients. The security, reliability, and user experience are all top-notch."
-                            </p>
-                            <hr>
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="position-relative">
-                                        <div class="image">
-                                            <img src="./assets/avatar-2-DvihTPKl.jpg" class="rounded-circle"
-                                                alt="Michael">
-                                        </div>
-                                        <span class="verified-icon position-absolute bottom-0 end-0">
-                                            <i class="fa-solid fa-circle-check"></i>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <h6 class="fw-bold mb-0 fs-5">Dr. Michael Chen</h6>
-                                        <span class="text-muted">Director, MedCare</span><br>
-                                        <span class="spn"><i class="fa-brands fa-linkedin me-1"></i> Verified on
-                                            LinkedIn</span>
-                                    </div>
+                            <div class="p-20">
+                                <div class="d-flex align-items-start justify-content-between mb-2">
+                                    <h3 class="fs-30 fw-bold text-purple1 m-0">$1,425,000</h3>
+                                    <span class="fs-14 text-secondary text-end">Price per sq ft: $650</span>
                                 </div>
-                                <div class="text-end">
-                                    <span class="fs-3 fw-bold">100K+</span>
-                                    <p class="text-muted mb-0">Patients</p>
+                                <p class="fs-6 fw-medium mb-12 text-secondary">3 beds • 2.5 baths • 2,192 sqft</p>
+                                <h4 class="fs-6 fw-medium mb-2">Downtown Penthouse</h4>
+                                <p class="fs-6 text-muted mb-4">789 Metropolitan Ave, New York, NY 10001</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="Images/avatar-2.jpg" alt="Emily Rodriguez" class="agent-avatar">
+                                        <span class="fs-14">Emily Rodriguez</span>
+                                    </div>
+                                    <button type="button" class="btn schedule-tour-btn">Schedule Tour</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item ">
-                        <div class="testimonial-card p-5 rounded-4 bg-white">
-                            <div class="d-flex justify-content-between align-items-center mb-4">
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="quote-box p-3 rounded-3">
-                                        <i class="fa-solid fa-quote-left fs-4"></i>
-                                    </div>
-                                    <div>
-                                        <div class="stars text-warning">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                        <span class="text-muted">5.0 Rating</span>
-                                    </div>
-                                </div>
-                                <span class="verified-badge px-3 py-2 rounded-pill">
-                                    <i class="fa-solid fa-circle-check me-1"></i> Verified
+
+                    <!-- Card 3 -->
+                    <div class="col-lg-4">
+                        <div class="property-card rounded-16px overflow-hidden h-100">
+                            <div class="position-relative h-256 overflow-hidden">
+                                <img src="Images/featured-properties-img-3.png" alt="Family Suburban Home"
+                                    class="w-100 property-img object-fit-cover">
+                                <span class="badge-tag badge-drop">Price Drop</span>
+                                <button type="button" class="fav-btn">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <span class="photos-tag">
+                                    <i class="fa-solid fa-camera me-1"></i>
+                                    32 Photos
                                 </span>
                             </div>
-                            <p class="fs-5 lh-lg mb-4">
-                                "Working with Clarity was a game-changer. Their mobile banking app exceeded all our
-                                expectations and has processed over $1 billion in transactions."
-                            </p>
-                            <hr>
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="position-relative">
-                                        <div class="image">
-                                            <img src="./assets/avatar-3-MKRsHcFc.jpg" class="rounded-circle"
-                                                alt="Michael">
-                                        </div>
-                                        <span class="verified-icon position-absolute bottom-0 end-0">
-                                            <i class="fa-solid fa-circle-check"></i>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <h6 class="fw-bold mb-0 fs-5">Eslam Salah</h6>
-                                        <span class="text-muted">CTO, FinanceFlow</span><br>
-                                        <span class="spn"><i class="fa-brands fa-linkedin me-1"></i> Verified on
-                                            LinkedIn</span>
-                                    </div>
+                            <div class="p-20">
+                                <div class="d-flex align-items-start justify-content-between mb-2">
+                                    <h3 class="fs-30 fw-bold text-purple1 m-0">$875,000</h3>
+                                    <span class="fs-14 text-secondary property-old-price text-end">$925,000</span>
                                 </div>
-                                <div class="text-end">
-                                    <span class="fs-3 fw-bold">$1B+</span>
-                                    <p class="text-muted mb-0">Processed</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <div class="testimonial-card p-5 rounded-4 bg-white">
-                            <div class="d-flex justify-content-between align-items-center mb-4">
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="quote-box p-3 rounded-3">
-                                        <i class="fa-solid fa-quote-left fs-4"></i>
+                                <p class="fs-6 fw-medium mb-12 text-secondary">5 beds • 4 baths • 3,845 sqft</p>
+                                <h4 class="fs-6 fw-medium mb-2">Family Suburban Home</h4>
+                                <p class="fs-6 text-muted mb-4">456 Oak Tree Lane, Austin, TX 78701</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="Images/avatar-3.jpg" alt="Michael Chen" class="agent-avatar">
+                                        <span class="fs-14">Michael Chen</span>
                                     </div>
-                                    <div>
-                                        <div class="stars text-warning">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                        <span class="text-muted">5.0 Rating</span>
-                                    </div>
-                                </div>
-                                <span class="verified-badge px-3 py-2 rounded-pill">
-                                    <i class="fa-solid fa-circle-check me-1"></i> Verified
-                                </span>
-                            </div>
-                            <p class="fs-5 lh-lg mb-4">
-                                "Their cloud migration service was flawless. Zero downtime, improved performance, and
-                                significant cost savings. The team's expertise is unmatched."
-                            </p>
-                            <hr>
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="position-relative">
-                                        <div class="image">
-                                            <img src="./assets/avatar-4-CDQD_dyw.jpg" class="rounded-circle"
-                                                alt="Michael">
-                                        </div>
-                                        <span class="verified-icon position-absolute bottom-0 end-0">
-                                            <i class="fa-solid fa-circle-check"></i>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <h6 class="fw-bold mb-0 fs-5">Omar Wael</h6>
-                                        <span class="text-muted">IT Director, GlobalTech</span><br>
-                                        <span class="spn"><i class="fa-brands fa-linkedin me-1"></i> Verified on
-                                            LinkedIn</span>
-                                    </div>
-                                </div>
-                                <div class="text-end">
-                                    <span class="fs-3 fw-bold">0%</span>
-                                    <p class="text-muted mb-0">Downtime</p>
+                                    <button type="button" class="btn schedule-tour-btn">Schedule Tour</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!------- FAQ ------->
-
-    <section id="faq">
-        <div class="content container w-75">
-            <div class="caption text-center">
-                <span class="px-3 py-2 rounded-pill"><i class="fa-solid fa-circle-question me-2"></i>FAQ</span>
-                <h2 class="my-4">Frequently Asked Questions</h2>
-                <p class="lead fs-5 lh-base">Find answers to common questions about our services, process, and how we
-                    <br> can help transform your business.
-                </p>
-            </div>
-            <div class="items my-5">
-                <div
-                    class="item mx-auto d-flex justify-content-between align-items-center border py-3 px-4 border-1 rounded-4 w-75">
-                    <p class="fw-bold fs-6 mb-0">What services does Clarity offer?</p>
-                    <i class="fa-solid fa-angle-down p-3 me-2 w-auto rounded-circle"></i>
-                </div>
-                <div
-                    class="item mx-auto my-3 d-flex justify-content-between align-items-center border py-3 px-4 border-1 rounded-4 w-75">
-                    <p class="fw-bold fs-6 mb-0">How long does a typical project take?</p>
-                    <i class="fa-solid fa-angle-down p-3 me-2 w-auto rounded-circle"></i>
-                </div>
-                <div
-                    class="item mx-auto my-3 d-flex justify-content-between align-items-center border py-3 px-4 border-1 rounded-4 w-75">
-                    <p class="fw-bold fs-6 mb-0">What is your development process?</p>
-                    <i class="fa-solid fa-angle-down p-3 me-2 w-auto rounded-circle"></i>
-                </div>
-                <div
-                    class="item mx-auto d-flex justify-content-between align-items-center border py-3 px-4 border-1 rounded-4 w-75">
-                    <p class="fw-bold fs-6 mb-0">Do you provide ongoing support and maintenance?</p>
-                    <i class="fa-solid fa-angle-down p-3 me-2 w-auto rounded-circle"></i>
-                </div>
-                <div
-                    class="item mx-auto my-3 d-flex justify-content-between align-items-center border py-3 px-4 border-1 rounded-4 w-75">
-                    <p class="fw-bold fs-6 mb-0">What technologies do you work with?</p>
-                    <i class="fa-solid fa-angle-down p-3 me-2 w-auto rounded-circle"></i>
-                </div>
-                <div
-                    class="item mx-auto d-flex justify-content-between align-items-center border py-3 px-4 border-1 rounded-4 w-75">
-                    <p class="fw-bold fs-6 mb-0">How do you ensure project security and data privacy?</p>
-                    <i class="fa-solid fa-angle-down p-3 me-2 w-auto rounded-circle"></i>
+                <div class="text-center">
+                    <button type="button" class="main-btn main-btn-color1">
+                        View All Properties
+                        <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </button>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!------- Contact ------->
-
-    <section id="contact" class="my-5 py-5">
-        <div class="content container">
-            <div class="caption text-center">
-                <span class="px-3 py-2 rounded-pill"><i class="fa-solid fa-rocket me-2"></i>Let's Start Your
-                    Journey</span>
-                <h2 class="my-4">Ready to <br>
-                    Transform?</h2>
-                <p class="lead fs-5 lh-base">Take the first step towards digital excellence. Our experts are ready to
-                    turn <br> your vision into reality.
-                </p>
-            </div>
-            <div class="row p-5 m-5">
-                <div class="col-lg-7 p-5 bg-white">
-                    <h3 class="fs-4 fw-bold">Get Your Free Consultation</h3>
-                    <p class="">Fill out the form and we'll get back to you within 24 hours with a personalized
-                        proposal.</p>
-                    <form action="">
-                        <div class="names d-flex">
-                            <div class="first-name me-3 w-50">
-                                <label class=" mb-2">First Name <span class="text-black">*</span></label>
-                                <input type="text" class="form-control rounded-3 py-3 bg-light border-0"
-                                    placeholder="John">
-                            </div>
-                            <div class="last-name w-50">
-                                <label class=" mb-2">Last Name <span class="text-black">*</span></label>
-                                <input type="text" class="form-control rounded-3 py-3 bg-light border-0"
-                                    placeholder="Doe">
-                            </div>
-                        </div>
-                        <div class="emails d-flex my-5">
-                            <div class="email-address me-3 w-50">
-                                <label class=" mb-2">Email Address <span class="text-black">*</span></label>
-                                <input type="text" class="form-control rounded-3 py-3 bg-light border-0"
-                                    placeholder="john@company.com">
-                            </div>
-                            <div class="company w-50">
-                                <label class=" mb-2">Company <span class="text-black">*</span></label>
-                                <input type="text" class="form-control rounded-3 py-3 bg-light border-0"
-                                    placeholder="Your Company Name">
-                            </div>
-                        </div>
-                        <div class="selection me-3 w-50">
-                            <label class=" mb-2">Primary Interest</label>
-                            <select class="form-select w-100" name="" id="">
-                                <option value="">Choose your focus area</option>
-                                <option value="">Web development & design</option>
-                                <option value="">Mobile app development</option>
-                                <option value="">cloud & infrastructure</option>
-                                <option value="">AI & machine learning</option>
-                                <option value="">digital markting & seo</option>
-                                <option value="">complete digital transformation</option>
-                            </select>
-                        </div>
-                        <div class="selection me-3 my-3 w-50">
-                            <label class=" mb-2">Timeline</label>
-                            <select class="form-select w-100" name="" id="">
-                                <option value="">what do you want to start</option>
-                                <option value="">immediately</option>
-                                <option value="">within 1 month</option>
-                                <option value="">within 3 month</option>
-                                <option value="">within 6 month</option>
-                                <option value="">just exploring options</option>
-                            </select>
-                        </div>
-                        <div class="budget">
-                            <label class="fw-bold mb-2">Project Budget Range</label>
-                            <div class="d-flex justify-content-between gap-3">
-                                <div class="bdg text-center border rounded-3 px-4 py-3">
-                                    <p class="fw-bold mb-1 text-black">$25K - $50K</p>
-                                    <span class="text-muted">Growth</span>
-                                </div>
-                                <div class="bdg text-center border rounded-3 px-4 py-3">
-                                    <p class="fw-bold mb-1 text-black">$50K - $100K</p>
-                                    <span class="text-muted">Scale</span>
-                                </div>
-                                <div class="bdg text-center border rounded-3 px-4 py-3">
-                                    <p class="fw-bold mb-1 text-black">$100K+</p>
-                                    <span class="text-muted">Enterprise</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="my-3">
-                            <label class="fw-bold mb-2">Tell us about your project</label>
-                            <textarea class="form-control bg-light border-0 rounded-3 p-3" rows="5"
-                                placeholder="Describe your project goals, challenges, and what success looks like for you..."></textarea>
-                        </div>
-                        <div class="form-check mb-3 mt-5">
-                            <input class="form-check-input rounded-1" type="checkbox" id="privacy">
-                            <label class="form-check-label" for="privacy">
-                                I agree to receive communications and accept the
-                                <a href="#" class="text-decoration-none">Privacy Policy</a>
-                            </label>
-                        </div>
-                        <button class="submit-btn w-100 py-3 rounded-pill text-white fw-bold fs-5 border-0">
-                            Get My Free Consultation <i class="fa-solid fa-arrow-right ms-2"></i>
+        </section>
+        <!-- *********sec1 end*********** -->
+        <!-- *********sec2 start*********** -->
+        <section id="Services" class="py-80 bg-white">
+            <div class="container">
+                <div class="text-center mb-64">
+                    <div class="mb-3 d-flex align-items-center justify-content-center">
+                        <div class="title-left"></div>
+                        <div class="title-1">What We Offer</div>
+                        <div class="title-right"></div>
+                    </div>
+                    <h2 class="main-title text-center">
+                        Our Services
+                    </h2>
+                    <p class="m-0 p-title fs-20 mx-auto">
+                        Comprehensive real estate solutions tailored to your needs
+                    </p>
+                </div>
+                <ul class="nav nav-tabs justify-content-center service-tabs mb-5" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-Buying-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Buying" type="button" role="tab" aria-controls="pills-Buying"
+                            aria-selected="true">
+                            <i class="fa-solid fa-house me-2"></i>Buying
                         </button>
-                    </form>
-                </div>
-                <div class="right col-lg-5 p-5">
-                    <h3 class="text-white fw-bold mb-4">Why Choose Clarity?</h3>
-                    <div class="d-flex gap-3 mb-4">
-                        <div class="right-icon rounded-3 p-3 flex-shrink-0">
-                            <i class="fa-solid fa-clock text-white"></i>
-                        </div>
-                        <div>
-                            <h6 class="text-white fw-bold">24-Hour Response</h6>
-                            <p class="text-white-50">Quick turnaround on all inquiries with detailed project analysis
-                            </p>
-                        </div>
-                    </div>
-                    <div class="d-flex gap-3 mb-4">
-                        <div class="right-icon rounded-3 p-3 flex-shrink-0">
-                            <i class="fa-solid fa-shield text-white"></i>
-                        </div>
-                        <div>
-                            <h6 class="text-white fw-bold">100% Satisfaction</h6>
-                            <p class="text-white-50">Money-back guarantee if you're not completely satisfied</p>
-                        </div>
-                    </div>
-                    <div class="d-flex gap-3 mb-4">
-                        <div
-                            class="right-icon d-flex align-items-center justify-content-center rounded-3 p-3 flex-shrink-0">
-                            <i class="fa-solid fa-users text-white"></i>
-                        </div>
-                        <div>
-                            <h6 class="text-white fw-bold">Expert Team</h6>
-                            <p class="text-white-50">150+ certified professionals with 8+ years experience</p>
-                        </div>
-                    </div>
-                    <hr class="border-white opacity-25">
-                    <h6 class="text-white fw-bold mb-3">Direct Contact</h6>
-                    <p class="text-white mb-2"><i class="fa-solid fa-phone me-2"></i> +1 (555) 123-4567</p>
-                    <p class="text-white mb-2"><i class="fa-solid fa-envelope me-2"></i> hello@clarity.com</p>
-                    <p class="text-white mb-0"><i class="fa-solid fa-location-dot me-2"></i> San Francisco, CA</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Selling-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Selling" type="button" role="tab" aria-controls="pills-Selling"
+                            aria-selected="false">
+                            <i class="fa-solid fa-dollar-sign me-2"></i>Selling
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Renting-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Renting" type="button" role="tab" aria-controls="pills-Renting"
+                            aria-selected="false">
+                            <i class="fa-solid fa-key me-2"></i>Renting
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Investing-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Investing" type="button" role="tab" aria-controls="pills-Investing"
+                            aria-selected="false">
+                            <i class="fa-solid fa-chart-simple me-2"></i>Investing
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Commercial-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Commercial" type="button" role="tab" aria-controls="pills-Commercial"
+                            aria-selected="false">
+                            <i class="fa-solid fa-building me-2"></i>Commercial
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-Buying" role="tabpanel"
+                        aria-labelledby="pills-Buying-tab" tabindex="0">
+                        <div class="row align-items-center gy-5">
+                            <div class="col-lg-6">
+                                <h3 class="fs-30 fw-bold mb-4">Home Buying Made Simple</h3>
+                                <p class="fs-18 service-gray mb-4">
+                                    Our expert team guides you through every step of the home buying
+                                    process, from initial search to closing day.
+                                </p>
 
-    <!------- Footer ------->
+                                <div class="d-flex gap-3 mb-4">
+                                    <div class="service-icon-box service-icon-box-color1">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fs-5 fw-semibold mb-2">Property Search</h4>
+                                        <p class="service-gray fs-6 m-0">
+                                            Access exclusive listings and get notified of new properties that match your
+                                            criteria.
+                                        </p>
+                                    </div>
+                                </div>
 
-    <footer class="py-5 mt-5">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-start mb-4">
-                <div>
-                    <div class="d-flex align-items-center gap-2 mb-3">
-                        <i class="fa-solid fa-cube p-2 rounded-3 text-white w-auto"></i>
-                        <span class="fw-bold fs-5">Clarity</span>
+                                <div class="d-flex gap-3 mb-4">
+                                    <div class="service-icon-box service-icon-box-color1">
+                                        <i class="fa-solid fa-calculator"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fs-5 fw-semibold mb-2">Financial Planning</h4>
+                                        <p class="service-gray fs-6 m-0">
+                                            Get pre-approved for mortgages and understand your budget with our financial
+                                            experts.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-3 mb-4">
+                                    <div class="service-icon-box service-icon-box-color1">
+                                        <i class="fa-solid fa-handshake"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fs-5 fw-semibold mb-2">Negotiation Support</h4>
+                                        <p class="service-gray fs-6 m-0">
+                                            Our skilled negotiators ensure you get the best possible deal on your dream
+                                            home.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="main-btn main-btn-color1">Start Your Search</button>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="position-relative">
+                                    <img src="Images/service-img-1.webp" alt="happy family with real estate agent"
+                                        class="w-100 service-main-img rounded-16px object-fit-cover">
+                                    <div class="service-stat-card
+                            service-stat-card-direction1">
+                                        <div class="text-primary1 fs-4 fw-bold">98%</div>
+                                        <div class="fs-6 text-secondary">Success Rate</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-muted">Transforming businesses through innovative digital <br> solutions and
-                        cutting-edge technology.</p>
-                </div>
-                <div class="d-flex gap-2">
-                    <a href="#" class="social-icon rounded-circle d-flex align-items-center justify-content-center">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="social-icon rounded-circle d-flex align-items-center justify-content-center">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social-icon rounded-circle d-flex align-items-center justify-content-center">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="#" class="social-icon rounded-circle d-flex align-items-center justify-content-center">
-                        <i class="fa-brands fa-dribbble"></i>
-                    </a>
+                    <div class="tab-pane fade" id="pills-Selling" role="tabpanel" aria-labelledby="pills-Selling-tab"
+                        tabindex="0">
+                        <div class="row align-items-center gy-5">
+                            <div class="col-lg-6">
+                                <h3 class="fs-30 fw-bold mb-4">Maximize Your Home's Value</h3>
+                                <p class="fs-18 service-gray mb-4">
+                                    Sell your property quickly and for the best price with our comprehensive marketing
+                                    strategy and expert guidance.
+                                </p>
+
+                                <div class="d-flex gap-3 mb-4">
+                                    <div class="service-icon-box service-icon-box-color2">
+                                        <i class="fa-solid fa-chart-line"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fs-5 fw-semibold mb-2">Market Analysis</h4>
+                                        <p class="service-gray fs-6 m-0">
+                                            Get a comprehensive market analysis to price your home competitively.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-3 mb-4">
+                                    <div class="service-icon-box service-icon-box-color2">
+                                        <i class="fa-solid fa-camera"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fs-5 fw-semibold mb-2">Professional Marketing</h4>
+                                        <p class="service-gray fs-6 m-0">
+                                            High-quality photography, virtual tours, and multi-channel marketing
+                                            campaigns.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-3 mb-4">
+                                    <div class="service-icon-box service-icon-box-color2">
+                                        <i class="fa-solid fa-users"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fs-5 fw-semibold mb-2">Buyer Screening</h4>
+                                        <p class="service-gray fs-6 m-0">
+                                            We pre-qualify buyers to ensure serious inquiries and smooth transactions.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="main-btn main-btn-color2">Start Your Search</button>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="position-relative">
+                                    <img src="Images/service-img-2.webp" alt="happy family with real estate agent"
+                                        class="w-100 service-main-img rounded-16px object-fit-cover">
+                                    <div class="service-stat-card service-stat-card-direction2">
+                                        <div class="service-green fs-4 fw-bold">21 days</div>
+                                        <div class="fs-6 text-secondary">Avg. Time to Sell</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-Renting" role="tabpanel" aria-labelledby="pills-Renting-tab"
+                        tabindex="0">
+                        <div class="row align-items-center gy-5">
+                            <div class="col-lg-6">
+                                <h3 class="fs-30 fw-bold mb-4">Premium Rental Properties</h3>
+                                <p class="fs-18 service-gray mb-4">
+                                    Find your perfect rental home with our extensive portfolio of quality properties and
+                                    personalized service.
+                                </p>
+
+                                <div class="d-flex gap-3 mb-4">
+                                    <div class="service-icon-box service-icon-box-color1">
+                                        <i class="fa-solid fa-map-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fs-5 fw-semibold mb-2">Prime Locations</h4>
+                                        <p class="service-gray fs-6 m-0">
+                                            Access rentals in the most desirable neighborhoods and communities.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-3 mb-4">
+                                    <div class="service-icon-box service-icon-box-color1">
+                                        <i class="fa-solid fa-shield-halved"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fs-5 fw-semibold mb-2">Verified Properties</h4>
+                                        <p class="service-gray fs-6 m-0">
+                                            All our rental properties are thoroughly inspected and verified for quality.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-3 mb-4">
+                                    <div class="service-icon-box service-icon-box-color1">
+                                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fs-5 fw-semibold mb-2">24/7 Support</h4>
+                                        <p class="service-gray fs-6 m-0">
+                                            Round-the-clock maintenance and tenant support services.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="main-btn main-btn-color1">Browse Rentals</button>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="position-relative">
+                                    <img src="Images/service-img-3.webp" alt="happy family with real estate agent"
+                                        class="w-100 service-main-img rounded-16px object-fit-cover">
+                                    <div class="service-stat-card
+                            service-stat-card-direction1">
+                                        <div class="text-primary1 fs-4 fw-bold">5,000+</div>
+                                        <div class="fs-6 text-secondary">Available Rentals</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-Investing" role="tabpanel"
+                        aria-labelledby="pills-Investing-tab" tabindex="0">
+                        <div class="row align-items-center gy-5">
+                            <div class="col-lg-6">
+                                <h3 class="fs-30 fw-bold mb-4">Real Estate Investment</h3>
+                                <p class="fs-18 service-gray mb-4">
+                                    OBuild wealth through strategic real estate investments with our expert guidance and
+                                    market insights.
+                                </p>
+
+                                <div class="d-flex gap-3 mb-4">
+                                    <div class="service-icon-box service-icon-box-color3">
+                                        <i class="fa-solid fa-chart-pie"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fs-5 fw-semibold mb-2">Portfolio Analysis</h4>
+                                        <p class="service-gray fs-6 m-0">
+                                            Comprehensive analysis of investment opportunities and portfolio
+                                            optimization.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-3 mb-4">
+                                    <div class="service-icon-box service-icon-box-color3">
+                                        <i class="fa-solid fa-money-bill-wave"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fs-5 fw-semibold mb-2">ROI Projections</h4>
+                                        <p class="service-gray fs-6 m-0">
+                                            Detailed return on investment calculations and market forecasting
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-3 mb-4">
+                                    <div class="service-icon-box service-icon-box-color3">
+                                        <i class="fa-solid fa-gear"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fs-5 fw-semibold mb-2">Property Management</h4>
+                                        <p class="service-gray fs-6 m-0">
+                                            Full-service property management for hands-off investment experience.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="main-btn main-btn-color3">Explore Investments</button>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="position-relative">
+                                    <img src="Images/service-img-4.png" alt="happy family with real estate agent"
+                                        class="w-100 service-main-img rounded-16px object-fit-cover">
+                                    <div class="service-stat-card
+                            service-stat-card-direction2">
+                                        <div class="service-yellow fs-4 fw-bold">15%</div>
+                                        <div class="fs-6 text-secondary">Avg. Annual ROI</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-Commercial" role="tabpanel"
+                        aria-labelledby="pills-Commercial-tab" tabindex="0">
+                        <div class="row align-items-center gy-5">
+                            <div class="col-lg-6">
+                                <h3 class="fs-30 fw-bold mb-4">Commercial Real Estate</h3>
+                                <p class="fs-18 service-gray mb-4">
+                                    Expert commercial real estate services for businesses, investors, and developers.
+                                </p>
+
+                                <div class="d-flex gap-3 mb-4">
+                                    <div class="service-icon-box service-icon-box-color4">
+                                        <i class="fa-solid fa-building"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fs-5 fw-semibold mb-2">Office Spaces</h4>
+                                        <p class="service-gray fs-6 m-0">
+                                            Prime office locations for businesses of all sizes and industries.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-3 mb-4">
+                                    <div class="service-icon-box service-icon-box-color4">
+                                        <i class="fa-solid fa-warehouse"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fs-5 fw-semibold mb-2">Industrial Properties</h4>
+                                        <p class="service-gray fs-6 m-0">
+                                            Warehouses, manufacturing facilities, and distribution centers.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-3 mb-4">
+                                    <div class="service-icon-box service-icon-box-color4">
+                                        <i class="fa-solid fa-store"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fs-5 fw-semibold mb-2">Retail Spaces</h4>
+                                        <p class="service-gray fs-6 m-0">
+                                            High-traffic retail locations and shopping center opportunities.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="main-btn main-btn-color4">View Commercial
+                                    Properties</button>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="position-relative">
+                                    <img src="Images/service-img-5.png" alt="happy family with real estate agent"
+                                        class="w-100 service-main-img rounded-16px object-fit-cover">
+                                    <div class="service-stat-card
+                            service-stat-card-direction1">
+                                        <div class="service-blue fs-4 fw-bold">$2.5B</div>
+                                        <div class="fs-6 text-secondary">Commercial Volume</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <hr>
-            <div class="text-center">
-                <p class="text-muted mb-1">© 2025 Clarity. All rights reserved.</p>
-                <p class="text-muted">Made with <i class="fa-solid fa-heart text-danger"></i> for amazing experiences
-                </p>
+        </section>
+        <!-- *********sec2 end*********** -->
+        <!-- *********sec3 start*********** -->
+        <section id="Testimonials" class="py-100 bg-purple2">
+            <div class="container">
+                <div class="text-center mb-64">
+                    <div class="mb-3 d-flex align-items-center justify-content-center">
+                        <div class="title-left2"></div>
+                        <div class="title-1">Client Stories</div>
+                        <div class="title-right2"></div>
+                    </div>
+                    <h2 class="main-title2 text-center">
+                        What Our Clients Say
+                    </h2>
+                    <p class="m-0 gray3 fs-20 mx-auto">
+                        Hear from satisfied homeowners who found their dream properties with EliteHomes
+                    </p>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="testimonial-card">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <div class="stars-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="testimonial-rating-text">5.0 out of 5</span>
+                                    </div>
+                                </div>
+
+                                <p class="fs-20 mb-32">
+                                    "EliteHomes made our home buying experience absolutely seamless. Sarah and her team
+                                    went above and beyond to help us find the perfect family home in Beverly Hills.
+                                    Their market
+                                    knowledge and negotiation skills saved us over $100,000 on our purchase. We couldn't
+                                    be
+                                    happier!"
+                                </p>
+
+                                <div
+                                    class="d-flex flex-column flex-md-row text-center text-md-start align-items-center">
+                                    <img src="Images/avatar-1.jpg" alt="Jennifer & Mark Thompson"
+                                        class="testimonial-avatar">
+                                    <div>
+                                        <h4 class="fs-18 fw-bold m-0">Jennifer & Mark Thompson</h4>
+                                        <p class="text-muted m-0">Beverly Hills Homeowners</p>
+                                        <p class="fs-14 text-secondary m-0">Purchased $2.8M Family Estate</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial-card">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <div class="stars-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="testimonial-rating-text">5.0 out of 5</span>
+                                    </div>
+                                </div>
+
+                                <p class="fs-20 mb-32">
+                                    "As first-time investors, we were nervous about entering the real estate market. The
+                                    EliteHomes
+                                    investment team provided incredible guidance and helped us build a portfolio that's
+                                    already
+                                    generating 18% annual returns. Their expertise is unmatched."
+                                </p>
+
+                                <div
+                                    class="d-flex flex-column flex-md-row text-center text-md-start align-items-center">
+                                    <img src="Images/avatar-2.jpg" alt="Jennifer & Mark Thompson"
+                                        class="testimonial-avatar">
+                                    <div>
+                                        <h4 class="fs-18 fw-bold m-0">David Rodriguez</h4>
+                                        <p class="text-muted m-0">Real Estate Investor</p>
+                                        <p class="fs-14 text-secondary m-0">$1.2M Investment Portfolio</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial-card">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <div class="stars-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="testimonial-rating-text">5.0 out of 5</span>
+                                    </div>
+                                </div>
+
+                                <p class="fs-20 mb-32">
+                                    "Selling our Manhattan penthouse was stress-free thanks to EliteHomes. They marketed
+                                    it beautifully, brought qualified buyers, and we sold for 15% above asking price in
+                                    just 10 days. Their professional photography and staging made all the difference."
+                                </p>
+
+                                <div
+                                    class="d-flex flex-column flex-md-row text-center text-md-start align-items-center">
+                                    <img src="Images/avatar-3.jpg" alt="Jennifer & Mark Thompson"
+                                        class="testimonial-avatar">
+                                    <div>
+                                        <h4 class="fs-18 fw-bold m-0">Amanda Chen</h4>
+                                        <p class="text-muted m-0">Manhattan Seller</p>
+                                        <p class="fs-14 text-secondary m-0">Sold $3.2M Penthouse</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial-card">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <div class="stars-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="testimonial-rating-text">5.0 out of 5</span>
+                                    </div>
+                                </div>
+
+                                <p class="fs-20 mb-32">
+                                    "Our company needed to relocate to a larger office space quickly. EliteHomes'
+                                    commercial team found us the perfect building in downtown Austin with flexible lease
+                                    terms and great amenities. They handled everything professionally and efficiently."
+                                </p>
+
+                                <div
+                                    class="d-flex flex-column flex-md-row text-center text-md-start align-items-center">
+                                    <img src="Images/avatar-4.jpg" alt="Jennifer & Mark Thompson"
+                                        class="testimonial-avatar">
+                                    <div>
+                                        <h4 class="fs-18 fw-bold m-0">Michael Foster</h4>
+                                        <p class="text-muted m-0">CEO, TechStart Inc.</p>
+                                        <p class="fs-14 text-secondary m-0">15,000 sq ft Office Lease</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <div class="Previous-next" aria-hidden="true">
+                            <i class="fa-solid fa-angle-left fs-20"></i>
+                        </div>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="Previous-next" aria-hidden="true">
+                            <i class="fa-solid fa-angle-right fs-20"></i>
+                        </span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
+        </section>
+        <!-- *********sec3 end*********** -->
+        <!-- *********sec4 start*********** -->
+        <section id="FAQ" class="py-80 bg-gray1">
+            <div class="container">
+                <div class="text-center mb-64">
+                    <div class="mb-3 d-flex align-items-center justify-content-center">
+                        <div class="title-left"></div>
+                        <div class="title-1">Help Center</div>
+                        <div class="title-right"></div>
+                    </div>
+                    <h2 class="main-title3 text-center">
+                        Frequently Asked Questions
+                    </h2>
+                    <p class="m-0 p-title fs-20 mx-auto">
+                        Get answers to the most common questions about buying, selling, and investing in real estate
+                    </p>
+                </div>
+                <div class="accordion faq-accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                <span>How do I know if I'm ready to buy a home?</span>
+                                <i class="fa-solid fa-chevron-down faq-chevron ms-3"></i>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                You're ready to buy a home when you have stable income, a good credit score (typically
+                                620+), a down payment saved (usually 10-20% of the home price), and you plan to stay in
+                                the area for at least 3-5 years. Our team can help assess your financial readiness and
+                                connect you with mortgage pre-approval services.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                <span>What's the best time of year to sell my home?</span>
+                                <i class="fa-solid fa-chevron-down faq-chevron ms-3"></i>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Spring and early summer (March through June) are traditionally the best times to sell,
+                                as buyers are more active and homes show better with good weather. However, market
+                                conditions, local factors, and your personal timeline are more important than the
+                                season. We can help you determine the optimal timing based on current market conditions
+                                in your area.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                <span>How much should I offer on a house?</span>
+                                <i class="fa-solid fa-chevron-down faq-chevron ms-3"></i>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Your offer should be based on comparable sales in the area, the home's condition,
+                                current market conditions, and your budget. In competitive markets, you might need to
+                                offer at or above asking price. Our agents will provide a detailed comparative market
+                                analysis (CMA) to help you make a competitive yet reasonable offer.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
+                                <span>What are closing costs and who pays them?</span>
+                                <i class="fa-solid fa-chevron-down faq-chevron ms-3"></i>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Closing costs typically range from 2-5% of the home's purchase price and include fees
+                                for loan origination, appraisal, title insurance, attorney fees, and taxes. Both buyers
+                                and sellers have closing costs, though they vary by location and can be negotiated.
+                                We'll provide a detailed breakdown of expected costs early in the process.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapsefive">
+                                <span>Should I get a home inspection?</span>
+                                <i class="fa-solid fa-chevron-down faq-chevron ms-3"></i>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Yes, absolutely! A professional home inspection typically costs $300-600 but can save
+                                you thousands by identifying potential issues before you buy. We recommend inspections
+                                for all property types and can connect you with qualified, licensed inspectors in your
+                                area.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapsesix">
+                                <span>How long does it take to buy or sell a home?</span>
+                                <i class="fa-solid fa-chevron-down faq-chevron ms-3"></i>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                For buyers, the process typically takes 30-45 days from offer acceptance to closing,
+                                though finding the right home can take weeks or months. For sellers, the average time on
+                                market varies by location and price range, but our properties typically sell within 28
+                                days. We'll provide realistic timelines based on your specific situation and local
+                                market conditions.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed d-flex justify-content-between align-items-center"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseseven"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapseseven">
+                                <span>What makes EliteHomes different from other real estate companies?</span>
+                                <i class="fa-solid fa-chevron-down faq-chevron ms-3"></i>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseseven" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                We combine cutting-edge technology with personalized service, offering virtual tours,
+                                AI-powered property matching, comprehensive market analytics, and a dedicated team of
+                                experts for each client. Our 98% client satisfaction rate and average 21-day selling
+                                time speak to our commitment to excellence and results.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- *********sec4 end*********** -->
+        <!-- *********sec5 start*********** -->
+        <section id="Contact" class="py-80 bg-white position-relative overflow-hidden">
+            <div class="contact-shape1 d-none d-lg-block"></div>
+            <div class="contact-shape1-min d-none d-lg-block"></div>
+            <div class="contact-shape2 d-none d-lg-block"></div>
+            <div class="contact-shape2-min d-none d-lg-block"></div>
+            <div class="container">
+                <div class="text-center mb-64">
+                    <div class="mb-3 d-flex align-items-center justify-content-center">
+                        <div class="title-left"></div>
+                        <div class="title-1">Contact Us</div>
+                        <div class="title-right"></div>
+                    </div>
+                    <h2 class="main-title text-center">
+                        Get In Touch
+                    </h2>
+                    <p class="m-0 p-title fs-20 mx-auto">
+                        Ready to start your real estate journey? Our expert team is here to help you every step of the
+                        way
+                    </p>
+                </div>
+                <div class="row g-4 mb-64">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info-card contact-info-card-purple">
+                            <div class="contact-icon-box gradient-icon-purple">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <h4 class="fs-18 fw-bold mb-1">Call Us</h4>
+                            <p class="fs-14 mb-2">Mon-Fri from 8am to 5pm</p>
+                            <a href="tel:+15551234567" class="contact-card-link text-purple1">+1 (555) 123-4567</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info-card contact-info-card-violet">
+                            <div class="contact-icon-box gradient-icon-violet">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <h4 class="fs-18 fw-bold mb-1">Email Us</h4>
+                            <p class="fs-14 mb-2">We'll respond within 24hrs</p>
+                            <a href="mailto:info@elitehomes.com"
+                                class="contact-card-link text-violet1">info@elitehomes.com</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info-card contact-info-card-pink">
+                            <div class="contact-icon-box gradient-icon-pink">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <h4 class="fs-18 fw-bold mb-1">Visit Us</h4>
+                            <p class="fs-14 mb-2">Come say hello</p>
+                            <span class="contact-card-link text-pink1">Beverly Hills, CA</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info-card contact-info-card-indigo">
+                            <div class="contact-icon-box gradient-icon-indigo">
+                                <i class="fa-solid fa-comments"></i>
+                            </div>
+                            <h4 class="fs-18 fw-bold mb-1">Live Chat</h4>
+                            <p class="fs-14 mb-2">Available 24/7</p>
+                            <a href="#" class="contact-card-link text-indigo1">Start chatting <i
+                                    class="fa-solid fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="contact-info-panel mb-4">
+                            <h3 class="fs-4 fw-bold mb-4">Contact Information</h3>
+
+                            <div class="d-flex gap-3 mb-4">
+                                <div class="contact-mini-icon contact-mini-icon-violet">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fs-6 fw-semibold mb-1">Address</h4>
+                                    <p class="fs-14 text-secondary m-0">1234 Luxury Boulevard</p>
+                                    <p class="fs-14 text-secondary m-0">Beverly Hills, CA 90210</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex gap-3 mb-4">
+                                <div class="contact-mini-icon contact-mini-icon-purple">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fs-6 fw-semibold mb-1">Phone</h4>
+                                    <p class="fs-14 text-secondary m-0">+1 (555) 123-4567</p>
+                                    <p class="fs-14 text-secondary m-0">+1 (555) 987-6543</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex gap-3 mb-4">
+                                <div class="contact-mini-icon contact-mini-icon-pink">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fs-6 fw-semibold mb-1">Email</h4>
+                                    <p class="fs-14 text-secondary m-0">info@elitehomes.com</p>
+                                    <p class="fs-14 text-secondary m-0">support@elitehomes.com</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex gap-3">
+                                <div class="contact-mini-icon contact-mini-icon-indigo">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fs-6 fw-semibold mb-1">Working Hours</h4>
+                                    <p class="fs-14 text-secondary m-0">Mon-Fri: 8:00 AM - 8:00 PM</p>
+                                    <p class="fs-14 text-secondary m-0">Sat-Sun: 9:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="connect-card">
+                            <h3 class="fs-5 fw-bold text-white mb-3">Connect With Us</h3>
+                            <p class="fs-14 connect-card-text-color mb-4">Follow us on social media for updates and
+                                insights</p>
+                            <div class="d-flex justify-content-between gap-12px">
+                                <a href="https://www.facebook.com/" class="connect-social-icon" target="_blank"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://x.com/" class="connect-social-icon" target="_blank"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/" class="connect-social-icon" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/" class="connect-social-icon" target="_blank"><i
+                                        class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.youtube.com/" class="connect-social-icon" target="_blank"><i
+                                        class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="contact-form-card">
+                            <h3 class="fs-30 fw-bold mb-12">Send us a message</h3>
+                            <p class="fs-6 text-secondary mb-32">Fill out the form below and we'll get back to you as
+                                soon as possible</p>
+
+                            <form>
+                                <div class="row gy-4 mb-4">
+                                    <div class="col-md-6">
+                                        <label class="fw-semibold fs-14 mb-2">First Name <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control contact-form-field" placeholder="John">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="fw-semibold fs-14 mb-2">Last Name <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control contact-form-field" placeholder="Doe">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="fw-semibold fs-14 mb-2">Email Address <span
+                                                class="text-danger">*</span></label>
+                                        <input type="email" class="form-control contact-form-field"
+                                            placeholder="john@example.com">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="fw-semibold fs-14 mb-2">Phone Number</label>
+                                        <input type="text" class="form-control contact-form-field"
+                                            placeholder="+1 (555) 000-0000">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="fw-semibold fs-14 mb-2">I'm interested in</label>
+                                        <select class="form-select contact-form-field cursor-pointer">
+                                            <option selected>Select a service</option>
+                                            <option>Buying</option>
+                                            <option>Selling</option>
+                                            <option>Renting</option>
+                                            <option>Investing</option>
+                                            <option>Commercial</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="fw-semibold fs-14 mb-2">Your Message <span
+                                                class="text-danger">*</span></label>
+                                        <textarea class="form-control contact-form-field contact-form-textarea"
+                                            placeholder="Tell us about your real estate needs..."></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="contact-agree-box mb-4">
+                                    <div class="d-flex align-items-center gap-12px m-0">
+                                        <input class="contact-checkbox align-self-start align-self-lg-center m-0"
+                                            type="checkbox" id="agreeCheck">
+                                        <label class="fs-14 " for="agreeCheck">
+                                            I agree to receive marketing communications and updates from EliteHomes
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="main-btn  w-100 mb-3">
+                                    Send Message
+                                    <i class="fa-solid fa-paper-plane ms-2"></i>
+                                </button>
+
+                                <p class="fs-14 text-secondary text-center m-0">We respect your privacy. Your
+                                    information will never be shared.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- *********sec5 end*********** -->
+    </main>
+    <footer class="py-5 bg-footer">
+        <div class="container-fluid">
+            <div
+                class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-4 pb-4 footer-top">
+                <h3 class="fs-4 fw-bold text-white m-0">EliteHomes</h3>
+                <p class="footer-copyright m-0">© 2025 EliteHomes. All rights reserved.</p>
+                <div class="d-flex gap-3">
+                    <a href="https://www.facebook.com/" class="footer-social-icon" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com/" class="footer-social-icon" target="_blank"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" class="footer-social-icon" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/" class="footer-social-icon" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <p class="footer-bottom-text text-center m-0">
+                Made with <i class="fa-solid fa-heart footer-heart-icon"></i> for finding your dream home
+            </p>
         </div>
     </footer>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
